@@ -5,7 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Libranomics</title>
-    
+    <script src="https://unpkg.com/scrollnav@3.0.1/dist/scrollnav.min.umd.js"></script>
+<style>
+
+.scroll-nav {
+  /* background-color: #f8f9fa;
+  border: 1px solid #a2a9b1; */
+  padding: 15px 10px;
+  position: sticky;
+  top: 5em;
+  width: 250px;
+
+}
+
+.scroll-nav a {
+    font-family: 'Vollkorn SC';
+    color: black !important
+}
+
+.scroll-nav li {
+    white-space: normal !important;
+}
+.scroll-nav__list {
+  margin: 0;
+  padding-left: 1.4em;
+  list-style-type: none;
+}
+
+
+.scroll-nav__item {
+  margin-bottom: 5px;
+}
+
+.scroll-nav__item--active {
+  font-weight: 600;
+  position: relative;
+  
+  
+
+}
+
+.scroll-nav__item--active:before {
+    content: '';
+    display: block;
+    width: 14px;
+    height: 14px;
+    background: #EFCD18;
+    position: absolute;
+    left: -20px;
+    top: .3em;
+  }
+.scroll-nav__link {
+  color: #0645ad;
+  text-decoration: none;
+
+}
+
+/* .post__article {
+  padding: 20px;
+  
+  @media screen and (min-width: 700px) {
+    margin-left: 210px;
+    padding: 30px;
+  }
+  
+  @media screen and (min-width: 1000px) {
+    margin-left: 310px;
+  }
+} */
+</style>
+    <script>
+        window.addEventListener('load',function() {
+            const content = document.querySelector('#write');
+
+scrollnav.init(content, { 
+  debug: false
+});
+        })
+        </script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@400;600&family=Vollkorn:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
